@@ -1,17 +1,16 @@
 import Image from "next/image";
-import Button from "../../commonComponents/button/Button";
 import Testimonials from "./components/testimonials/Testimonials";
 import FrequentlyAskedQuestions from "./components/frequentlyAskedQuestions/FrequentlyAskedQuestions";
 
 import styles from "./style.module.css";
+import SmallBuyButton from "@/components/pages/home/components/SmallBuyButton";
+import LargeBuyButton from "@/components/pages/home/components/LargeBuyButton";
 
 const HomePage = () => {
   return (
     <main>
       <div>
-        <div className="flex justify-end pr-3 pt-3.5 pb-7">
-          <Button label={"BUY TICKET"} />
-        </div>
+        <SmallBuyButton />
         <div className="flex justify-center">
           <div className="flex flex-col gap-2">
             <div>
@@ -73,26 +72,8 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="flex justify-center item">
-        <div className="flex flex-col mt-10 bg-white mx-2.5 w-[22.625rem] h-[9rem] rounded-3xl px-5 py-6 justify-between">
-          <div className="flex text-[40px] font-black justify-between">
-            <div>TICKET:</div>
-            <div>20 €</div>
-          </div>
-
-          <div className="flex text-xl font-black justify-between">
-            <div className="flex items-center">PROCEED TO CHECKOUT</div>
-            <div className="flex items-center">
-              <Image
-                src={"/icons/rightArrow.svg"}
-                alt="rightArrow"
-                width={37.5}
-                height={19.5}
-                priority
-              />
-            </div>
-          </div>
-        </div>
+      <div className={"flex justify-center item mt-10"}>
+        <LargeBuyButton />
       </div>
 
       <div className="mt-12">
