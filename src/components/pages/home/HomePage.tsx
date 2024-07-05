@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "../../commonComponents/button/Button";
 import Testimonials from "./components/testimonials/Testimonials";
+import FrequentlyAskedQuestions from "./components/frequentlyAskedQuestions/FrequentlyAskedQuestions";
 
 import styles from "./style.module.css";
 
@@ -89,6 +90,21 @@ const HomePage = () => {
               />
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="mt-12">
+        <FrequentlyAskedQuestions />
+      </div>
+
+      <div
+        className={
+          "flex justify-between items-center bg-black px-5 py-1 mt-14 h-10"
+        }
+      >
+        <div className={"font-black text-xs text-white"}>CONTACT:</div>
+        <div className={"font-black text-xs text-white"}>
+          FELLTHERAVE@GMAIL.COM
         </div>
       </div>
     </main>
