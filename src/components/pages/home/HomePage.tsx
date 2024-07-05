@@ -1,5 +1,6 @@
-import Button from "@/components/commonComponents/button/Button";
 import Image from "next/image";
+import Button from "../../commonComponents/button/Button";
+import Testimonials from "./components/testimonials/Testimonials";
 
 const HomePage = () => {
   return (
@@ -34,6 +35,10 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="mt-10">
+        <Testimonials />
       </div>
     </main>
   );
