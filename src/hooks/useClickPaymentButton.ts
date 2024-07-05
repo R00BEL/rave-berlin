@@ -22,7 +22,7 @@ const useClickPaymentButton = () => {
     localStorage.setItem(LocalStorageKey.IS_ATTEMPTED_PAYMENT, "true");
     await increaseNumberOfInterestedUsers();
     router.push(Routes.NO_TICKETS);
-  }, []);
+  }, [router]);
 
   return { handleClickOnPaymentButton, isSubmit };
 };

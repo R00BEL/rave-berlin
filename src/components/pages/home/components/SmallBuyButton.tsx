@@ -18,4 +18,6 @@ const SmallBuyButton = memo(() => {
   );
 });
 
+SmallBuyButton.displayName = "SmallBuyButton";
+
 export default SmallBuyButton;

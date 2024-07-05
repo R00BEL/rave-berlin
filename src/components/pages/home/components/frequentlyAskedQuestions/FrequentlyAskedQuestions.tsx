@@ -1,7 +1,5 @@
 import { memo } from "react";
 
-import styles from "./style.module.css";
-
 const QuestionsAnswers = [
   {
     id: "1",
@@ -42,5 +40,7 @@ const FrequentlyAskedQuestions = memo(() => {
     </div>
   );
 });
+
+FrequentlyAskedQuestions.displayName = "FrequentlyAskedQuestions";
 
 export default FrequentlyAskedQuestions;

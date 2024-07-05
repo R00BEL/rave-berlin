@@ -15,4 +15,6 @@ const Button = memo(({ label, onClick, isLoading }: Props) => {
   );
 });
 
+Button.displayName = "Button";
+
 export default Button;

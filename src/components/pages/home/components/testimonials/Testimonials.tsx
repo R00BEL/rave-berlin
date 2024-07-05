@@ -16,9 +16,8 @@ const ListTestimonial = [
   "“Met new friends and had the time of my life!”",
   "“Pure euphoria, couldn't stop dancing!”",
   "“Absolutely epic, the highlight of my year!”",
-  "“A night I'll never forget, thank you for the amazing vibes!”"
+  "“A night I'll never forget, thank you for the amazing vibes!”",
 ];
-
 
 const Testimonials = memo(() => {
   return (
@@ -38,5 +37,7 @@ const Testimonials = memo(() => {
     </div>
   );
 });
+
+Testimonials.displayName = "Testimonials";
 
 export default Testimonials;

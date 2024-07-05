@@ -45,4 +45,6 @@ const LargeBuyButton = memo(() => {
   );
 });
 
+LargeBuyButton.displayName = "LargeBuyButton";
+
 export default LargeBuyButton;

@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Testimonials from "./components/testimonials/Testimonials";
 import FrequentlyAskedQuestions from "./components/frequentlyAskedQuestions/FrequentlyAskedQuestions";
+import SmallBuyButton from "./components/SmallBuyButton";
+import LargeBuyButton from "./components/LargeBuyButton";
 
 import styles from "./style.module.css";
-import SmallBuyButton from "@/components/pages/home/components/SmallBuyButton";
-import LargeBuyButton from "@/components/pages/home/components/LargeBuyButton";
 
 const HomePage = () => {
   return (
@@ -54,6 +54,7 @@ const HomePage = () => {
               src={"/photo1.jpeg"}
               alt="A group of people dancing at a party with colorful lighting effects"
               fill
+              sizes={"390px 200px"}
               priority
             />
           </div>
@@ -62,6 +63,7 @@ const HomePage = () => {
               src={"/photo2.jpeg"}
               alt="A young woman dances at a party with colorful lighting effects, surrounded by other people."
               fill
+              sizes={"390px 200px"}
               priority
             />
           </div>
