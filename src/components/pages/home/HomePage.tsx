@@ -2,6 +2,8 @@ import Image from "next/image";
 import Button from "../../commonComponents/button/Button";
 import Testimonials from "./components/testimonials/Testimonials";
 
+import styles from "./style.module.css";
+
 const HomePage = () => {
   return (
     <main>
@@ -39,6 +41,19 @@ const HomePage = () => {
 
       <div className="mt-10">
         <Testimonials />
+      </div>
+      
+      <div className="mt-8 flex flex-col gap-2.5 justify-center items-center">
+        <div className="px-2.5 py-1 bg-black text-white flex justify-center font-black text-xs w-full">
+          SECRET LOCATION // ILLEGAL EXPERIENCE // REAL BERLIN
+        </div>
+
+        <div className={styles.photo1} />
+        <div className={styles.photo2} />
+
+        <div className="px-2.5 py-1 bg-black text-white flex justify-center font-black text-xs w-full">
+          TECHNO // DnB // HOUSE // TRANCE
+        </div>
       </div>
     </main>
   );
