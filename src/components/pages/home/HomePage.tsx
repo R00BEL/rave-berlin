@@ -49,21 +49,23 @@ const HomePage = () => {
           SECRET LOCATION // ILLEGAL EXPERIENCE // REAL BERLIN
         </div>
 
-        <div className={styles.photo1}>
-          <Image
-            src={"/photo1.jpeg"}
-            alt="A group of people dancing at a party with colorful lighting effects"
-            fill
-            priority
-          />
-        </div>
-        <div className={styles.photo2}>
-          <Image
-            src={"/photo2.jpeg"}
-            alt="A young woman dances at a party with colorful lighting effects, surrounded by other people."
-            fill
-            priority
-          />
+        <div className={"flex flex-wrap gap-2.5"}>
+          <div className={styles.photo1}>
+            <Image
+              src={"/photo1.jpeg"}
+              alt="A group of people dancing at a party with colorful lighting effects"
+              fill
+              priority
+            />
+          </div>
+          <div className={styles.photo2}>
+            <Image
+              src={"/photo2.jpeg"}
+              alt="A young woman dances at a party with colorful lighting effects, surrounded by other people."
+              fill
+              priority
+            />
+          </div>
         </div>
 
         <div className="px-2.5 py-1 bg-black text-white flex justify-center font-black text-xs w-full">
