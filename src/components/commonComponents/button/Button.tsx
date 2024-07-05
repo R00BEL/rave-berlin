@@ -3,13 +3,14 @@ import styles from "./style.module.css";
 
 interface Props {
   label: string;
-  onClick: () => void;
+  isLoading?: boolean;
+  onClick?: () => void;
 }
 
-const Button = memo(({ label, onClick }: Props) => {
+const Button = memo(({ label, onClick, isLoading }: Props) => {
   return (
-    <button className={styles.button} onClick={onClick}>
-      {label}
+    <button className={styles.button} onClick={onClick} disabled={isLoading}>
+      {isLoading ? "Loading..." : label}
     </button>
   );
 });
