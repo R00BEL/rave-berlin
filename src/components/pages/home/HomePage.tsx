@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Testimonials from "./components/testimonials/Testimonials";
-import FrequentlyAskedQuestions from "./components/frequentlyAskedQuestions/FrequentlyAskedQuestions";
+import FrequentlyAskedQuestions from "./components/FrequentlyAskedQuestions";
 import SmallBuyButton from "./components/SmallBuyButton";
 import LargeBuyButton from "./components/LargeBuyButton";
 
@@ -8,78 +8,80 @@ import styles from "./style.module.css";
 
 const HomePage = () => {
   return (
-    <main>
+    <main className={"flex flex-col justify-between h-svh"}>
       <div>
-        <SmallBuyButton />
-        <div className="flex justify-center">
-          <div className="flex flex-col gap-2">
-            <div>
+        <div>
+          <SmallBuyButton />
+          <div className="flex justify-center">
+            <div className="flex flex-col gap-2">
+              <div>
+                <Image
+                  src="/feelTheRave.svg"
+                  alt="Feel the rave Logo"
+                  width={251.189}
+                  height={148.8}
+                  priority
+                />
+              </div>
+              <div className="flex justify-between bg-black text-white px-2 font-black text-xs pt-px pb-1">
+                <div>13/07/2024</div>
+                <div>22:00</div>
+              </div>
+              <div>
+                <Image
+                  src="/berlin.svg"
+                  alt="Berlin Logo"
+                  width={252}
+                  height={39}
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <Testimonials />
+        </div>
+
+        <div className="mt-8 flex flex-col gap-2.5 justify-center items-center w-full">
+          <div className="px-2.5 py-1 bg-black text-white flex justify-center font-black text-xs w-svw">
+            SECRET LOCATION // ILLEGAL EXPERIENCE // REAL BERLIN
+          </div>
+
+          <div className={"flex flex-wrap gap-2.5 w-full justify-center"}>
+            <div className={styles.photo1}>
               <Image
-                src="/feelTheRave.svg"
-                alt="Feel the rave Logo"
-                width={251.189}
-                height={148.8}
+                src={"/photo1.jpeg"}
+                alt="A group of people dancing at a party with colorful lighting effects"
+                fill
+                sizes={"390px 200px"}
                 priority
               />
             </div>
-            <div className="flex justify-between bg-black text-white px-2 font-black text-xs pt-px pb-1">
-              <div>13/07/2024</div>
-              <div>22:00</div>
-            </div>
-            <div>
+            <div className={styles.photo2}>
               <Image
-                src="/berlin.svg"
-                alt="Berlin Logo"
-                width={252}
-                height={39}
+                src={"/photo2.jpeg"}
+                alt="A young woman dances at a party with colorful lighting effects, surrounded by other people."
+                fill
+                sizes={"390px 200px"}
                 priority
               />
             </div>
           </div>
-        </div>
-      </div>
 
-      <div className="mt-10">
-        <Testimonials />
-      </div>
-
-      <div className="mt-8 flex flex-col gap-2.5 justify-center items-center w-full">
-        <div className="px-2.5 py-1 bg-black text-white flex justify-center font-black text-xs w-full">
-          SECRET LOCATION // ILLEGAL EXPERIENCE // REAL BERLIN
-        </div>
-
-        <div className={"flex flex-wrap gap-2.5"}>
-          <div className={styles.photo1}>
-            <Image
-              src={"/photo1.jpeg"}
-              alt="A group of people dancing at a party with colorful lighting effects"
-              fill
-              sizes={"390px 200px"}
-              priority
-            />
-          </div>
-          <div className={styles.photo2}>
-            <Image
-              src={"/photo2.jpeg"}
-              alt="A young woman dances at a party with colorful lighting effects, surrounded by other people."
-              fill
-              sizes={"390px 200px"}
-              priority
-            />
+          <div className="px-2.5 py-1 bg-black text-white flex justify-center font-black text-xs w-full">
+            TECHNO // DnB // HOUSE // TRANCE
           </div>
         </div>
 
-        <div className="px-2.5 py-1 bg-black text-white flex justify-center font-black text-xs w-full">
-          TECHNO // DnB // HOUSE // TRANCE
+        <div className={"flex justify-center item mt-10"}>
+          <LargeBuyButton />
         </div>
-      </div>
 
-      <div className={"flex justify-center item mt-10"}>
-        <LargeBuyButton />
-      </div>
-
-      <div className="mt-12">
-        <FrequentlyAskedQuestions />
+        <div className="mt-12">
+          <FrequentlyAskedQuestions />
+        </div>
       </div>
 
       <div
