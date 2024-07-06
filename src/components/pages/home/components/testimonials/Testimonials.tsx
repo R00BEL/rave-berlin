@@ -27,7 +27,7 @@ const Testimonials = memo(() => {
           <div
             key={index + "-1"}
             className={
-              "flex items-center flex-shrink-0 w-[158px] rounded-[0.69081rem] p-[10px] mr-[11px] bg-[#fff] text-[12px] sm:text-base font-black [transform:translate3d(0,_0,_0)] animate-carousel"
+              "flex items-center flex-shrink-0 w-[200px] rounded-[0.69081rem] p-[10px] mr-[11px] bg-[#fff] text-[12px] sm:text-base font-black [transform:translate3d(0,_0,_0)] animate-carouselSmallScreen sm:animate-carouselLargeScreen"
             }
           >
             {t}
@@ -37,7 +37,7 @@ const Testimonials = memo(() => {
           <div
             key={index + "-2"}
             className={
-              "flex items-center flex-shrink-0 w-[158px] rounded-[0.69081rem] p-[10px] mr-[11px] bg-[#fff] text-[12px] sm:text-base font-black [transform:translate3d(0,_0,_0)] animate-carousel"
+              "flex items-center flex-shrink-0 w-[200px] rounded-[0.69081rem] p-[10px] mr-[11px] bg-[#fff] text-[12px] sm:text-base font-black [transform:translate3d(0,_0,_0)] animate-carouselSmallScreen sm:animate-carouselLargeScreen"
             }
           >
             {t}
