@@ -7,7 +7,7 @@ const NoTickets = () => {
   return (
     <main
       className={
-        "flex flex-col justify-center items-center px-2  h-svh box-border"
+        "flex flex-col justify-center items-center px-2 h-svh box-border"
       }
     >
       <div className={"font-black text-2xl"}>All tickets are sold out</div>
