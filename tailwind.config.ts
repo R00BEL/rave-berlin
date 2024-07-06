@@ -13,6 +13,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        carousel: "carousel 80s linear infinite",
+      },
+      keyframes: {
+        carousel: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(calc(-169px * 14))" },
+        },
+      },
     },
   },
   plugins: [],

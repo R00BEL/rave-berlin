@@ -21,15 +21,25 @@ const ListTestimonial = [
 
 const Testimonials = memo(() => {
   return (
-    <div className={styles.slider}>
-      <div className={styles.slideTrack}>
+    <div className={"overflow-hidden w-full"}>
+      <div className={"flex"}>
         {ListTestimonial.map((t, index) => (
-          <div key={index + "-1"} className={styles.slide}>
+          <div
+            key={index + "-1"}
+            className={
+              "flex items-center flex-shrink-0 w-[158px] rounded-[0.69081rem] p-[10px] mr-[11px] bg-[#fff] text-[12px] sm:text-base font-black [transform:translate3d(0,_0,_0)] animate-carousel"
+            }
+          >
             {t}
           </div>
         ))}
         {ListTestimonial.map((t, index) => (
-          <div key={index + "-2"} className={styles.slide}>
+          <div
+            key={index + "-2"}
+            className={
+              "flex items-center flex-shrink-0 w-[158px] rounded-[0.69081rem] p-[10px] mr-[11px] bg-[#fff] text-[12px] sm:text-base font-black [transform:translate3d(0,_0,_0)] animate-carousel"
+            }
+          >
             {t}
           </div>
         ))}
