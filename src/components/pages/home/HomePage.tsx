@@ -4,8 +4,6 @@ import FrequentlyAskedQuestions from "./components/FrequentlyAskedQuestions";
 import SmallBuyButton from "./components/SmallBuyButton";
 import LargeBuyButton from "./components/LargeBuyButton";
 
-import styles from "./style.module.css";
-
 const HomePage = () => {
   return (
     <main className={"flex flex-col justify-between h-svh"}>
@@ -50,21 +48,31 @@ const HomePage = () => {
           </div>
 
           <div className={"flex flex-wrap gap-2.5 w-full justify-center"}>
-            <div className={styles.photo1}>
+            <div
+              className={
+                "w-full max-w-96 sm:max-w-[32rem] h-52 sm:h-96 relative"
+              }
+            >
               <Image
+                className={"bg-[lightgray] object-cover object-center"}
                 src={"/photo1.jpeg"}
                 alt="A group of people dancing at a party with colorful lighting effects"
                 fill
-                sizes={"390px 200px"}
+                sizes="(max-width: 384px) 100vw, (max-width: 640px) 384px, 32rem"
                 priority
               />
             </div>
-            <div className={styles.photo2}>
+            <div
+              className={
+                "w-full max-w-96 sm:max-w-[32rem] h-52 sm:h-96 relative"
+              }
+            >
               <Image
+                className={"bg-[lightgray] object-cover object-center"}
                 src={"/photo2.jpeg"}
                 alt="A young woman dances at a party with colorful lighting effects, surrounded by other people."
                 fill
-                sizes={"390px 200px"}
+                sizes="(max-width: 384px) 100vw, (max-width: 640px) 384px, 32rem"
                 priority
               />
             </div>
