@@ -45,7 +45,7 @@ const HomePage = () => {
         </div>
 
         <div className="mt-8 flex flex-col gap-2.5 justify-center items-center w-full">
-          <div className="px-2.5 py-1 bg-black text-white flex justify-center font-black text-xs w-svw">
+          <div className="px-2.5 py-1 bg-black text-white flex justify-center font-black text-xs w-svw sm:text-base">
             SECRET LOCATION // ILLEGAL EXPERIENCE // REAL BERLIN
           </div>
 
@@ -70,7 +70,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="px-2.5 py-1 bg-black text-white flex justify-center font-black text-xs w-full">
+          <div className="px-2.5 py-1 bg-black text-white flex justify-center font-black text-xs w-full sm:text-base">
             TECHNO // DnB // HOUSE // TRANCE
           </div>
         </div>
@@ -86,12 +86,18 @@ const HomePage = () => {
 
       <div
         className={
-          "flex justify-between items-center bg-black px-5 py-1 mt-14 h-10"
+          "flex justify-between sm:justify-center items-center bg-black px-5 py-1 mt-14 h-10 sm:p-9"
         }
       >
-        <div className={"font-black text-xs text-white"}>CONTACT:</div>
-        <div className={"font-black text-xs text-white"}>
-          FELLTHERAVE@GMAIL.COM
+        <div
+          className={"flex justify-between items-center sm:w-[48rem] w-full"}
+        >
+          <div className={"font-black text-xs sm:text-base text-white"}>
+            CONTACT:
+          </div>
+          <div className={"font-black text-xs sm:text-base text-white"}>
+            FELLTHERAVE@GMAIL.COM
+          </div>
         </div>
       </div>
     </main>

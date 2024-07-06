@@ -42,13 +42,19 @@ const QuestionsAnswers = [
 const FrequentlyAskedQuestions = memo(() => {
   return (
     <div className={"flex sm:justify-center"}>
-      <div className={"mx-3.5 sm:w-80"}>
-        <div className={"flex justify-center text-xl font-black mb-5"}>FAQ</div>
+      <div className={"mx-3.5 sm:w-[48rem]"}>
+        <div
+          className={"flex justify-center text-xl font-black mb-5 sm:text-3xl"}
+        >
+          FAQ
+        </div>
         <div className={"flex flex-col gap-4"}>
           {QuestionsAnswers.map((qa) => (
             <div key={qa.id}>
-              <div className={"font-black text-xs"}>{qa.question}</div>
-              <div className={"text-xs"}>{qa.answers}</div>
+              <div className={"font-black text-xs sm:text-base"}>
+                {qa.question}
+              </div>
+              <div className={"text-xs sm:text-base"}>{qa.answers}</div>
             </div>
           ))}
         </div>
