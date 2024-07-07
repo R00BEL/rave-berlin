@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import Testimonials from "./components/Testimonials";
 import FrequentlyAskedQuestions from "./components/FrequentlyAskedQuestions";
-import SmallBuyButton from "./components/SmallBuyButton";
 import LargeBuyButton from "./components/LargeBuyButton";
+import Button from "@/components/commonComponents/Button";
+import { Routes } from "@/constans/routes";
 
 const HomePage = () => {
   return (
@@ -11,7 +13,9 @@ const HomePage = () => {
         <div className={"flex sm:justify-center"}>
           <div className={"sm:w-[48rem] w-full"}>
             <div className="flex justify-end pr-3 sm:pr-0 pt-3.5 pb-7">
-              <SmallBuyButton />
+              <Link href={Routes.NO_TICKETS}>
+                <Button label={"BUY TICKET"} />
+              </Link>
             </div>
             <div className="flex justify-center">
               <div className="flex flex-col gap-2">
