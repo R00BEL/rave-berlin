@@ -2,19 +2,17 @@
 
 import { memo } from "react";
 
-import Button from "@/components/commonComponents/button/Button";
+import Button from "@/components/commonComponents/Button";
 import useClickPaymentButton from "@/hooks/useClickPaymentButton";
 
 const SmallBuyButton = memo(() => {
   const { handleClickOnPaymentButton, isSubmit } = useClickPaymentButton();
   return (
-    <div className="flex justify-end pr-3 pt-3.5 pb-7">
-      <Button
-        label={"BUY TICKET"}
-        onClick={handleClickOnPaymentButton}
-        isLoading={isSubmit}
-      />
-    </div>
+    <Button
+      label={"BUY TICKET"}
+      onClick={handleClickOnPaymentButton}
+      isLoading={isSubmit}
+    />
   );
 });
 

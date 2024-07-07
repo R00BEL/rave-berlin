@@ -1,7 +1,5 @@
 import { memo } from "react";
 
-import styles from "./style.module.css";
-
 const ListTestimonial = [
   "“I lost my vision, after the things I have seen on this rave”",
   "“Craziest Night in my life”",

@@ -1,7 +1,5 @@
-"use client";
-
-import Button from "@/components/commonComponents/button/Button";
 import Link from "next/link";
+import Button from "../../commonComponents/Button";
 
 const NoTickets = () => {
   return (

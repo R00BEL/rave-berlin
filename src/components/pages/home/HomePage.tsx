@@ -1,38 +1,44 @@
 import Image from "next/image";
-import Testimonials from "./components/testimonials/Testimonials";
+import Testimonials from "./components/Testimonials";
 import FrequentlyAskedQuestions from "./components/FrequentlyAskedQuestions";
 import SmallBuyButton from "./components/SmallBuyButton";
 import LargeBuyButton from "./components/LargeBuyButton";
+
+import feelTheRaveImage from "../../../../public/feelTheRave.svg";
+import berlinImage from "../../../../public/berlin.svg";
 
 const HomePage = () => {
   return (
     <main className={"flex flex-col justify-between h-svh"}>
       <div>
-        <div>
-          <SmallBuyButton />
-          <div className="flex justify-center">
-            <div className="flex flex-col gap-2">
-              <div>
-                <Image
-                  src="/feelTheRave.svg"
-                  alt="Feel the rave Logo"
-                  width={251.189}
-                  height={148.8}
-                  priority
-                />
-              </div>
-              <div className="flex justify-between bg-black text-white px-2 font-black text-xs pt-px pb-1">
-                <div>13/07/2024</div>
-                <div>22:00</div>
-              </div>
-              <div>
-                <Image
-                  src="/berlin.svg"
-                  alt="Berlin Logo"
-                  width={252}
-                  height={39}
-                  priority
-                />
+        <div className={"flex sm:justify-center"}>
+          <div className={"sm:w-[48rem] w-full"}>
+            <div className="flex justify-end pr-3 sm:pr-0 pt-3.5 pb-7">
+              <SmallBuyButton />
+            </div>
+            <div className="flex justify-center">
+              <div className="flex flex-col gap-2">
+                <div>
+                  <Image
+                    src={feelTheRaveImage}
+                    alt="Feel the rave Logo"
+                    sizes={"(max-width: 384px) 100vw, (max-width: 640px) 384px"}
+                    className={"w-64 sm:w-96"}
+                    priority
+                  />
+                </div>
+                <div className="flex justify-between bg-black text-white px-2 font-black text-xs sm:text-base pt-px pb-1">
+                  <div>13/07/2024</div>
+                  <div>22:00</div>
+                </div>
+                <div>
+                  <Image
+                    src={berlinImage}
+                    alt="Berlin Logo"
+                    className={"w-64 sm:w-96"}
+                    priority
+                  />
+                </div>
               </div>
             </div>
           </div>
