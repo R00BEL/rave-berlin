@@ -4,9 +4,6 @@ import FrequentlyAskedQuestions from "./components/FrequentlyAskedQuestions";
 import SmallBuyButton from "./components/SmallBuyButton";
 import LargeBuyButton from "./components/LargeBuyButton";
 
-import feelTheRaveImage from "../../../../public/feelTheRave.svg";
-import berlinImage from "../../../../public/berlin.svg";
-
 const HomePage = () => {
   return (
     <main className={"flex flex-col justify-between h-svh"}>
@@ -20,9 +17,11 @@ const HomePage = () => {
               <div className="flex flex-col gap-2">
                 <div>
                   <Image
-                    src={feelTheRaveImage}
+                    src="/feelTheRave.svg"
                     alt="Feel the rave Logo"
-                    sizes={"(max-width: 384px) 100vw, (max-width: 640px) 384px"}
+                    width="0"
+                    height="0"
+                    sizes={"(max-width: 384px) 16rem, (max-width: 640px) 24rem"}
                     className={"w-64 sm:w-96"}
                     priority
                   />
@@ -33,8 +32,11 @@ const HomePage = () => {
                 </div>
                 <div>
                   <Image
-                    src={berlinImage}
+                    src="/berlin.svg"
                     alt="Berlin Logo"
+                    width="0"
+                    height="0"
+                    sizes={"(max-width: 384px) 16rem, (max-width: 640px) 24rem"}
                     className={"w-64 sm:w-96"}
                     priority
                   />
