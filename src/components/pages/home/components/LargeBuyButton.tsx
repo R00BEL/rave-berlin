@@ -9,7 +9,7 @@ const LargeBuyButton = memo(() => {
   const { handleClickOnPaymentButton, isSubmit } = useClickPaymentButton();
   return (
     <button
-      className="flex flex-col bg-white mx-2.5 w-[22.625rem] h-[9rem] rounded-3xl px-5 py-6 justify-between cursor-pointer"
+      className="flex flex-col bg-white mx-2.5 w-[22.625rem] sm:w-96 h-36 sm:h-40 rounded-3xl px-5 py-6 justify-between cursor-pointer"
       onClick={handleClickOnPaymentButton}
     >
       {isSubmit ? (
