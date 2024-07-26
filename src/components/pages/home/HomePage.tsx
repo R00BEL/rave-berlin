@@ -13,9 +13,9 @@ const HomePage = () => {
         <div className={"flex sm:justify-center"}>
           <div className={"sm:w-[48rem] w-full"}>
             <div className="flex justify-end pr-3 sm:pr-0 pt-3.5 pb-7">
-              <Link href={Routes.NO_TICKETS}>
+              <a href={process.env.NEXT_PUBLIC_PAYMENT_LINK}>
                 <Button label={"BUY TICKET"} />
-              </Link>
+              </a>
             </div>
             <div className="flex justify-center">
               <div className="flex flex-col gap-2">
@@ -31,7 +31,7 @@ const HomePage = () => {
                   />
                 </div>
                 <div className="flex justify-between bg-black text-white px-2 font-black text-xs sm:text-base pt-px pb-1">
-                  <div>13/07/2024</div>
+                  <div>03/08/2024</div>
                   <div>22:00</div>
                 </div>
                 <div>

@@ -17,7 +17,7 @@ const QuestionsAnswers = [
     id: "3",
     question: "How will I get the rave location?",
     answers:
-      "On July 12, 2024 (one day before the rave), you will receive an email with a geopin that will provide the exact location of the event. Make sure to check your inbox for this important information!",
+      "On August 3, 2024 (one day before the rave), you will receive an email with a geopin that will provide the exact location of the event. Make sure to check your inbox for this important information!",
   },
   {
     id: "4",
@@ -35,7 +35,7 @@ const QuestionsAnswers = [
     id: "6",
     question: "Where is the rave located?",
     answers:
-      "The location is a secret and will be revealed to ticket holders on July 12, 2024. We promise an exciting and unique open-air venue perfect for an epic night of music and dancing under the stars!",
+      "The location is a secret and will be revealed to ticket holders on August 3, 2024. We promise an exciting and unique open-air venue perfect for an epic night of music and dancing under the stars!",
   },
 ];
 
